@@ -37,6 +37,20 @@ def get_status_code(url: str) -> int:
     pass
 ```
 
+### get_headers()
+```python
+def get_headers(url: str) -> dict:
+    '''get headers of response
+    
+    Args:
+        url (str): api url
+    
+    Returns:
+        str: headers of response
+    '''
+    pass
+```
+
 ### get_content_type()
 ```python
 def get_content_type(url: str) -> str:

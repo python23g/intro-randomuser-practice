@@ -30,6 +30,18 @@ def get_content_type(url: str) -> str:
     pass
 
 
+def get_headers(url: str) -> dict:
+    '''get headers of response
+    
+    Args:
+        url (str): api url
+    
+    Returns:
+        str: headers of response
+    '''
+    pass
+
+
 def get_text(url: str) -> str:
     '''get text of response
     
