@@ -1,5 +1,7 @@
 import requests 
 
+url = 'https://randomuser.me/api/'
+
 
 def get_version():
     '''get requests module'''
@@ -74,5 +76,28 @@ def get_data(url: str) -> dict:
     
     Returns:
         dict: data
+    '''
+    pass
+
+def get_user(url: str) -> dict:
+    '''get user
+    
+    Args:
+        url (str): api url
+    
+    Returns:
+        dict: user
+    '''
+    pass
+
+def get_users(url: str, n: int) -> list:
+    '''get user
+    
+    Args:
+        url (str): api url
+        n (int): number of users
+    
+    Returns:
+        list: list of users
     '''
     pass

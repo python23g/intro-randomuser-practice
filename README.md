@@ -11,9 +11,11 @@ pip install requests
 
 `/main.py`
 
-### import module
+### import module and url
 ```python
 import requests
+
+url = 'https://randomuser.me/api/'
 ```
 
 ### get_version()
@@ -103,6 +105,35 @@ def get_data(url: str) -> dict:
     
     Returns:
         dict: data
+    '''
+    pass
+```
+
+### get_user()
+```python
+def get_user(url: str) -> dict:
+    '''get user
+    
+    Args:
+        url (str): api url
+    
+    Returns:
+        dict: user
+    '''
+    pass
+```
+
+### get_users()
+```python
+def get_users(url: str, n: int) -> list:
+    '''get user
+    
+    Args:
+        url (str): api url
+        n (int): number of users
+    
+    Returns:
+        list: list of users
     '''
     pass
 ```
