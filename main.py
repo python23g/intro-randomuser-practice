@@ -5,7 +5,7 @@ url = 'https://randomuser.me/api/'
 
 def get_version():
     '''get requests module'''
-    pass
+    return requests.__version__
 
 
 def get_status_code(url: str) -> int:
@@ -17,7 +17,11 @@ def get_status_code(url: str) -> int:
     Returns:
         str: status code of response
     '''
-    pass
+    response = requests.get(url)
+    
+    return response.status_code
+
+# print(get_status_code(url))
 
 
 def get_content_type(url: str) -> str:
@@ -29,8 +33,16 @@ def get_content_type(url: str) -> str:
     Returns:
         str: content type of response
     '''
-    pass
+    # send request  to api
+    response = requests.get(url)
+    
+    # get headers of response
+    headers = response.headers
 
+    # get content type of response
+    return headers['Content-Type']
+
+print(get_content_type(url))
 
 def get_headers(url: str) -> dict:
     '''get headers of response
@@ -41,8 +53,12 @@ def get_headers(url: str) -> dict:
     Returns:
         str: headers of response
     '''
-    pass
+    response = requests.get(url)
 
+    return response.headers
+
+
+# print(get_headers(url))
 
 def get_text(url: str) -> str:
     '''get text of response
